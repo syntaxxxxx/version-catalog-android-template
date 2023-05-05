@@ -1,0 +1,107 @@
+[versions]
+# Plugin
+androidGradlePlugin= "8.0.0"
+kotlinAndroid= "1.8.20"
+kotlinKapt= "1.7.20"
+
+coreKtx = "1.8.0"
+lifecycleRuntimeKtx = "2.3.1"
+
+# Compose
+activityCompose = "1.5.1"
+composeBom = "2023.04.01"
+androidxLifecycle = "2.5.1"
+runtimeTracing = "1.0.0-alpha01"
+navigation= "2.5.3"
+
+# Testing
+junit = "4.13.2"
+extJunit = "1.1.5"
+espressoCore = "3.5.1"
+
+# Asynchronous
+coroutines = "1.6.4"
+
+# Http
+moshi = "1.14.0"
+retrofit = "2.9.0"
+loggingInterceptor = "4.10.0"
+
+# Database
+room = "2.4.3"
+
+# Dependency Injection
+hilt = "2.44.2"
+hiltNavigationCompose = "1.0.0"
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }
+android-library = { id = "com.android.library", version.ref = "androidGradlePlugin" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlinAndroid" }
+hilt-android = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
+kotlin-kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlinAndroid" }
+
+[libraries]
+androidx-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+
+# Compose
+compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+activity-compose = { group = "androidx.activity", name = "activity-compose" }
+ui = { group = "androidx.compose.ui", name = "ui" }
+ui-graphics= { group = "androidx.compose.ui", name = "ui-graphics" }
+ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview" }
+material3 = { group = "androidx.compose.material3", name = "material3" }
+ui-tooling = { module = "androidx.compose.ui:ui-tooling" }
+lifecycle-viewmodel-compose = { module = "androidx.lifecycle:lifecycle-viewmodel-compose" }
+lifecycle-runtime-compose = { module = "androidx.lifecycle:lifecycle-runtime-compose" }
+runtime-tracing = { module = "androidx.compose.runtime:runtime-tracing" }
+material3WindowSizeClass = { module = "androidx.compose.material3:material3-window-size-class" }
+navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "navigation" }
+navigation-runtime-ktx = { module = "androidx.navigation:navigation-runtime-ktx", version.ref = "navigation" }
+
+# Testing
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+ext-junit= { group = "androidx.test.ext", name = "junit", version.ref = "extJunit" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+ui-test-manifest= { module = "androidx.compose.ui:ui-test-manifest" }
+hilt-android-testing = { module = "com.google.dagger:hilt-android-testing", version.ref = "hilt" }
+
+# Asynchronous
+kotlinx-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "coroutines" }
+kotlinx-coroutines-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "coroutines" }
+
+# Http
+okhttp = { module = "com.squareup.okhttp3:okhttp" }
+retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
+moshi-kotlin = { module = "com.squareup.moshi:moshi-kotlin", version.ref = "moshi" }
+converter-moshi = { module = "com.squareup.retrofit2:converter-moshi", version.ref = "retrofit" }
+logging-interceptor = { module = "com.squareup.okhttp3:logging-interceptor", version.ref = "loggingInterceptor" }
+
+# Database
+room-runtime = { module = "androidx.room:room-runtime", version.ref = "room" }
+room-ktx = { module = "androidx.room:room-ktx", version.ref = "room" }
+room-compiler = { module = "androidx.room:room-compiler", version.ref = "room" }
+
+# Dependency Injection
+hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hilt" }
+hilt-android-compiler = { module = "com.google.dagger:hilt-android-compiler", version.ref = "hilt" }
+hilt-navigation-compose =  { module = "androidx.hilt:hilt-navigation-compose", version.ref = "hiltNavigationCompose" }
+
+#features
+# feed network module/api
+#    - infra logic
+# feed cache module
+#    - infra logic
+# feed feature/entities
+# feed presentation
+#
+#shared
+# network/api
+# database
+# presentation
+
+# framework
+ # network
+ # database
