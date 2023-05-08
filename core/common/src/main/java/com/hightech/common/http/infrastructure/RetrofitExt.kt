@@ -1,4 +1,4 @@
-package com.hightech.common.infra.remote
+package com.hightech.common.http.infrastructure
 
 import com.hightech.common.NetworkClientException
 import com.hightech.common.UnexpectedValuesRepresentation
